@@ -40,6 +40,9 @@
     .content{
         margin: 20px;
     }
+    .opr{
+        background-color: orange;
+    }
     
 </style>
 <head>
@@ -48,36 +51,36 @@
     <title>Calculator</title>
 </head>
 <body>
-    <h1 style="margin-left: 40%; margin-top: 10%; margin-bottom:2%;">Calculator</h1>
+    <h1 style="margin-left: 41%; margin-top: 2%; margin-bottom:2%;">Calculator</h1>
     <div class="background">
         <div class="content">
             <form name="form1">  
                 <input id="calc" type="text" name="answer" />
                 <br/>
                 <br />
-                <input type="button" value="1" onclick="form.answer.value += '1'" />
+                <input type="button" id="btn1" value="1" onclick="form.answer.value += '1'" />
                 <input type="button" value="2" onclick="form.answer.value += '2'" />
                 <input type="button" value="3" onclick="form.answer.value += '3'" />
-                <input type="button" value="+" onclick="form.answer.value += '+'" />
+                <input type="button" class="opr" value="+" onclick="form.answer.value += '+'" />
                 <br />
                 <br />
                 <input type="button" value="4" onclick="form.answer.value += '4'" />
                 <input type="button" value="5" onclick="form.answer.value += '5'" />
                 <input type="button" value="6" onclick="form.answer.value += '6'" />
-                <input type="button" value="-" onclick="form.answer.value += '-'" />
+                <input type="button" class="opr" value="-" onclick="form.answer.value += '-'" />
                 <br />
                 <br />
                 <input type="button" value="7" onclick="form.answer.value += '7'" />
                 <input type="button" value="8" onclick="form.answer.value += '8'" />
                 <input type="button" value="9" onclick="form.answer.value += '9'" />
-                <input type="button" value="*" onclick="form.answer.value += '*'" />
+                <input type="button" class="opr" value="x" onclick="form.answer.value += '*'" />
                 <br />
                 <br />
-                <input type="button" value="/" onclick="form.answer.value += '/'" />
                 <input type="button" value="0" onclick="form.answer.value += '0'" />
                 <input type="button" value="." onclick="form.answer.value += '.'" />
+                <input type="button" class="opr" value="/" onclick="form.answer.value += '/'" />
                 
-                <input type="Button" value="=" onclick="form1.answer.value = eval(form.answer.value)" />
+                <input type="Button" class="opr" value="=" onclick="form1.answer.value = eval(form.answer.value)" />
                 <br />
                 <input type="Button" value="Clear All" onclick="form1.answer.value = ' '"id="clear" />
                 <br />
